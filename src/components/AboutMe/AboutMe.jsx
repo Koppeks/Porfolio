@@ -1,35 +1,58 @@
-import me from "../../images/caricatura.png"
-import cararrow from "../../images/cararrow.svg"
-import { Trans, useTranslation } from "react-i18next"
+import me from "../../images/caricatura.png";
+import { useTranslation } from "react-i18next";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
-function AboutMe () {
+const CORE_SKILLS = [
+  'Development', 'DevOps', 'CI/CD', 'Cloud', 'Agile', 'Scrum',
+];
 
-    const [t, i18n] = useTranslation()
+const LANGUAGES = [
+  { name: 'Español', level: 'Native' },
+  { name: 'English', level: 'C1' },
+  { name: 'Português', level: 'B1' },
+];
 
-    return(
-        <div className='aboutme_container section' id="sectionAbout">
-            <h2>
-                <Trans i18nKey="aboutme.title">
-                    Acerca de mi
-                </Trans>
-            </h2>
-            <div>
-                <div className='aboutme_image'>
-                    <img className="aboutme_arrow" src={cararrow}/>
-                    <img src={me} alt="Texto acerca de mi" />
-                </div>
-                <p>
-                    <Trans i18nKey="aboutme.description">
-                        Vivo en Argentina, tengo 25 años, soy una persona tranquila y paciente, 
-                        me gusta el futbol, los videojuegos, hacer ejercicio que además de mejorar 
-                        la salud lo utilizo de forma terapeutica, las playas, el diseño en 2D/3D, 
-                        el taekwondo y claro, lo que antes consideraba un hobbie, 
-                        hoy es mi fuente de ingresos, la programación.
-                    </Trans>
-                    </p>
+function AboutMe() {
+  const { t } = useTranslation();
+  const ref = useScrollReveal();
+
+  return (
+    <section className="about section reveal" id="sectionAbout" ref={ref}>
+      <div className="section-container">
+        <div className="about__inner">
+          <div className="about__image-col">
+            <div className="about__image-wrap">
+              <img src={me} alt="Nicolás H. Silva" className="about__photo" />
+              <div className="about__image-glow" aria-hidden="true" />
             </div>
+          </div>
+          <div className="about__text-col">
+            <h2 className="about__title">{t('aboutme.title')}</h2>
+            <p className="about__desc">{t('aboutme.description')}</p>
+            <div className="about__skills">
+              <p className="about__skills-label">{t('aboutme.skills_label')}</p>
+              <div className="about__skills-grid">
+                {CORE_SKILLS.map(skill => (
+                  <span key={skill} className="about__skill">{skill}</span>
+                ))}
+              </div>
+            </div>
+            <div className="about__languages">
+              <p className="about__skills-label">{t('extra.languages')}</p>
+              <div className="about__langs">
+                {LANGUAGES.map(({ name, level }) => (
+                  <div key={name} className="about__lang">
+                    <span className="about__lang-name">{name}</span>
+                    <span className="about__lang-level">{level}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default AboutMe
+export default AboutMe;

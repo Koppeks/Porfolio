@@ -1,181 +1,114 @@
-@use 'sass:math';
+.extras {
+  padding: 80px 0;
 
-$orbitItemSize: 2.5em;
-$map: (ring-0: 3, ring-1: 4);
-$lastRing: 1;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
-.extra_container{
-    border-right: 3px solid var(--dark-second);
-    margin-right: calc(14vw + 6px);
-    padding-top: 40px ;
+  &__block {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    transition: border-color var(--transition);
 
-    .extra_holder{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 0 20px 0;
-
-        .extra_text, .extra_list{
-            width: 40%;
-        }
-        .extra_text{
-            padding-left: 50px;
-        }
-        .extra_rotation{
-            background-color: var(--dark-second);
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            position: relative;
-
-            .orbit-icon {
-                width: $orbitItemSize;
-                height: $orbitItemSize;
-                line-height: $orbitItemSize;
-                font-size: 1.2em;
-                text-align: center;
-                display: block;
-              }
-              
-              .orbit-wrap {
-                height: 20em;
-                list-style: none;
-                font-size: 1.3em;
-                
-                > li {
-                  position: absolute;
-                  left: 50%;
-                  top: 50%;
-                  transform: translate(-50%, -50%);  
-                }
-              }
-              
-              ul[class^=ring] {
-                @extend %ring;
-                transition: all 300ms ease-in-out;
-                li {
-                  @extend %orbiting-object;
-                  transition: all 300ms ease-in-out;
-                }
-              }
-              
-              @mixin orbit-item($numItems, $numRing) {
-                @for $s from 1 through $numItems {  
-                  // Spread items over the ring
-                  $deg: math.div(380deg, $numItems);
-                  
-                  .ring-#{$numRing} > *:nth-of-type(#{$s}) {
-                    transform: rotate($s * $deg) translate(4em) rotate(-$s * $deg);
-                  }
-                }
-              }
-              
-              // Render rings
-              @for $i from 0 through $lastRing {  
-                .ring-#{$i} {
-                  width: 15em;
-                  height: 15em ;
-                  animation: clockwiseRotate 20s linear infinite;
-                  
-                  img {
-                    animation: counterClockwiseRotate 20s linear infinite;
-                  }
-                }
-                
-                @include orbit-item(map-get($map, ring-#{$i}), $i);
-              }
-              
-              
-              %ring {
-                // border: solid 1px var(--green-detail);
-                box-shadow: 0px 0px 10px 0px var(--green-detail);
-                position: relative;
-                padding: 0;
-                border-radius: 50%;
-                list-style: none;
-                box-sizing: content-box;
-              }
-              
-              %orbiting-object {
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: $orbitItemSize;
-                height: $orbitItemSize;
-                margin: math.div(-$orbitItemSize, 1.5);
-              }
-              /* 
-              animations 
-              */
-              @keyframes clockwiseRotate {
-                  from {
-                      transform: rotate(0deg)
-                  }
-                  to {
-                      transform: rotate(360deg)
-                  }
-              }
-              
-              @keyframes counterClockwiseRotate {
-                0% {
-                  transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(-360deg);
-                }
-              }
-
-
-        }
+    &:hover {
+      border-color: var(--border-accent);
     }
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
-  .extra_container{
-    margin-right: calc(17vw + 6px);
   }
-}
-@media screen and (max-width: 768px) {
-  .extra_container{
-    margin-right: calc(20vw + 6px);
+
+  &__block-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-faint);
+    margin-bottom: 18px;
   }
-}
-@media screen and (max-width: 540px) {
-  .extra_container{
-    border: none;
-    margin-right: 0;
-  
-    .extra_holder{
-      flex-direction: column;
-    
-      .extra_text, .extra_list{
-        width: 80%;
-      }
 
-      .extra_rotation{
-          margin-top: 50px;
-          width: 200px;
-          height: 200px;
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 
-          .orbit-icon {
-              font-size: 1.1em;
-            }
-            
-            .orbit-wrap {
-              font-size: 0.9em;
-            }
+  &__icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      filter: grayscale(0.2) brightness(0.85);
+      transition: filter var(--transition), transform var(--transition);
+    }
+
+    span {
+      font-size: 10px;
+      color: var(--text-faint);
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0) brightness(1);
+        transform: translateY(-2px);
       }
     }
-    .extra_holder:nth-child(2){
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center; 
-      align-items: center;
-      padding: 20px 0 20px 0;
+  }
+
+  &__langs {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__lang-name {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 400;
+  }
+
+  &__lang-level {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    padding: 2px 8px;
+    background: var(--accent-dim);
+    border-radius: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .extras {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .extras {
+    padding: 60px 0;
+
+    &__grid {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -3,23 +3,14 @@
 @use './scss/base/base';
 @use './scss/base/resets';
 
-//Estilos app
 @use './scss/app.scss';
-//Estilos navbar
 @use './scss/components/Navbar.scss';
-//Estilos Frontpage
 @use './scss/components/FrontPage.scss';
-//Estilos Stack
 @use './scss/components/Stack.scss';
-//Estilos Porfolio
 @use './scss/components/Porfolio.scss';
-//Estilos AboutMe
+@use './scss/components/ProjectCard.scss';
+@use './scss/components/Contributions.scss';
 @use './scss/components/AboutMe.scss';
-//Estilos ExtraAbilities
-@use './scss/components/ExtraAbilities.scss';
-//Estilos ContactMe
 @use './scss/components/ContactMe.scss';
-//Estilos FormInput
 @use './scss/components/FormInput.scss';
-//Estilos Footer
 @use './scss/components/Footer.scss';

@@ -1,40 +1,73 @@
 {
-  "maindescription": "Desarrollador web fullstack",
-  "fronttext": "Descubrí la programación y diseño hace 5 años, todo comenzo como un hobbie, haciendo mods para videojuegos. Disfrute mucho modeando, haciendo pixelart y texturas 2D, dediqué mi tiempo a aprender nuevos lenguajes, buscar código y ayudar a otros programadores. Termine descubriendo la programacion web, que mezcla lo que más me gusta, la lógica de programar y el estilo en diseño.",
+  "maindescription": "Desarrollador Frontend & Fullstack",
+  "fronttext": "Construyo experiencias web rápidas, accesibles y visualmente pulidas. Me apasiona el código limpio, el buen UX y entregar productos que importan.",
   "navbar": {
     "one": "Inicio",
-    "four": "Acerca de mi",
-    "five": "Extras",
+    "three": "Proyectos",
+    "four": "Sobre mí",
+    "five": "Habilidades",
     "six": "Contacto"
   },
-  "stacktitle": "Mi stack de tecnologías",
-  "porfolio": {
-    "mateweb": "Un proyecto personal, que era para ofrecer mis servicios en internet, en ese momento solo sabia JavaScript, HTML y CSS.",
-    "sinnel": "Era un local de reparaciones de computadoras, necesitaba una pagina para tener mas visibilidad y aumentar el flujo de clientes.",
-    "soyhenry": "El proyecto final de el bootcamp de SoyHenry, un e-commerce de venta de componentes de pc, con API de MercadoPago, MetaMask y Auth0.",
-    "alan": "Una Landing page para un profesional del marketing y contenido digital.",
+  "hero": {
+    "available": "Disponible para trabajar",
+    "cta1": "Ver Proyectos",
+    "cta2": "Contactarme"
+  },
+  "stacktitle": "Stack de tecnologías",
+  "portfolio": {
+    "subtitle": "Una selección de proyectos que construí.",
+    "wakatimegas": {
+      "title": "Wakatime para Google Apps Script",
+      "description": "WakaTime para Google Apps Script lleva el seguimiento automático del tiempo al IDE de Google Apps Script, algo que los plugins oficiales de WakaTime para editores no soportan."
+    },
+    "accounting_system": {
+      "title": "Sistema Contable",
+      "description": "Un software interno para una solución de negocio de prestamistas minoristas, enfocado en la gestión contable, con capacidades de automatización y análisis de datos."
+    },
     "link": "Ver el sitio"
   },
+  "contributions": {
+    "title": "GitHub",
+    "subtitle": "Repos y proyectos open source.",
+    "layer5io": {
+      "name": "Layer5io/docs",
+      "desc": "Rehacer la animación de gradiente en la sección hero."
+    },
+    "puter": {
+      "name": "HeyPuter/puter",
+      "desc": "Traductiones de docs y agregado de sistema de plantillas de carpetas y archivos."
+    },
+    "webdevtools": {
+      "name": "Bashamega/WebDevTools",
+      "desc": "Implementación de un convertor de css a scss y viceversa."
+    }
+  },
   "aboutme": {
-    "title": "Acerca de mi",
-    "description": "Vivo en Argentina, tengo 25 años, soy una persona tranquila y paciente, me gusta el futbol, los videojuegos, hacer ejercicio que además de mejorar la salud lo utilizo de forma terapeutica, las playas, el diseño en 2D/3D, el taekwondo y claro, lo que antes consideraba un hobbie, hoy es mi fuente de ingresos, la programación."
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador web full-stack con más de 3 años construyendo aplicaciones dinámicas y escalables con JavaScript y TypeScript. Combino el desarrollo con un fuerte enfoque en UX/UI, creando interfaces modernas, intuitivas y fluidas. Trabajo cómodamente en todo el stack utilizando herramientas como TanStack, Tailwind, Bootstrap y Express, ya sea en monorepos o en arquitecturas basadas en REST. Me enfoco en escribir código limpio y mantenible, y en entregar resultados rápidos y confiables.",
+    "skills_label": "Habilidades principales"
   },
   "extra": {
-    "extratitle1": "Habilidades extra",
-    "extratitle2": "Tecnologías objetivo",
-    "description2": "Quiero seguir expandiendo mi conocimiento dentro de otras tecnologias en un futuro, he raspado la superficie de algunas como PHP, C# y C++. En un futuro estoy intrigado por ver que puedo aprender de esos lenguajes."
+    "extratitle1": "Herramientas",
+    "extratitle2": "Explorando",
+    "languages": "Idiomas"
   },
   "contact": {
-    "title": "Contacta conmigo",
+    "title": "Hablemos",
     "form": {
       "name1": "Nombre completo",
-      "placeholder1": "Escribe tu nombre completo aquí",
-      "placeholder2": "Escribe tu email aquí",
-      "name3": "Motivo de tu mensaje",
-      "placeholder3": "Escribe el motivo de tu mensaje aquí",
+      "placeholder1": "Tu nombre completo",
+      "placeholder2": "tu@email.com",
+      "name3": "Asunto",
+      "placeholder3": "¿De qué trata?",
       "name4": "Mensaje",
-      "placeholder4": "Escribe tu mensaje aquí",
-      "button": "Enviar"
+      "placeholder4": "Tu mensaje...",
+      "button": "Enviar mensaje",
+      "toast": {
+        "success": "¡Mensaje enviado! Me pondré en contacto pronto.",
+        "error": "Algo salió mal. Por favor, intentá de nuevo.",
+        "warning": "Por favor completá todos los campos correctamente."
+      }
     }
   },
   "footer": "Diseñado y construido por",
@@ -43,18 +76,18 @@
       "letters": "El nombre debe contener letras",
       "short": "El nombre es demasiado corto",
       "long": "El nombre es demasiado largo",
-      "specialchar": "Tu nombre no puede contener números o caracteres especiales"
+      "specialchar": "El nombre no puede contener números o caracteres especiales"
     },
     "email": {
-      "valid": "Debes ingresar un email valido"
+      "valid": "Ingresá un email válido"
     },
     "reason": {
-      "short": "La razon es demasiado corta"
+      "short": "El asunto es demasiado corto"
     },
     "message": {
-      "letters": "El nombre debe contener letras",
-      "short": "El nombre es demasiado corto",
-      "long": "El nombre es demasiado largo"
+      "letters": "El mensaje debe contener letras",
+      "short": "El mensaje es demasiado corto",
+      "long": "El mensaje es demasiado largo"
     },
     "required": "Campo requerido"
   }

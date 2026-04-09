@@ -4,15 +4,15 @@ import backend from "i18next-http-backend"
 import { initReactI18next } from "react-i18next"
 
 i18n.use(backend).use(languageDetector).use(initReactI18next).init({
-    fallbackLng: 'es',
-    debug: true,
-    detection:{
-        order:['queryString', 'cookie'],
-        cache: ['cookie']
-    },
-    interpolation:{
-        escapeValue: false
-    }
+  fallbackLng: 'es',
+  debug: false,
+  detection: {
+    order: ['navigator', 'querystring', 'cookie'],
+    cache: ['cookie'],
+  },
+  interpolation: {
+    escapeValue: false,
+  },
 })
 
 export default i18n

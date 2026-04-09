@@ -1,22 +1,20 @@
 import i18next from "i18next";
-import React from "react";
 import { useTranslation } from "react-i18next";
 
-const FormInput = props =>{
+function FormInput({ placeholder, label, error, ...props }) {
+  useTranslation();
 
-  const [t, i18n] = useTranslation()
-
-  const {placeholder, label, error} = props
-
-  return(
-      <div className="form_container">
-        <p className="text">{i18next.t(label)}</p>
-        <input {...props} placeholder={i18next.t(placeholder)} />
-        {error ? (
-        <p className="error">{i18next.t(error)}</p>) : null
-        }
-      </div>
-  )
+  return (
+    <div className="form-field">
+      <label className="form-field__label">{i18next.t(label)}</label>
+      <input
+        className="form-field__input"
+        placeholder={i18next.t(placeholder)}
+        {...props}
+      />
+      {error && <p className="form-field__error">{i18next.t(error)}</p>}
+    </div>
+  );
 }
 
-export default FormInput
+export default FormInput;

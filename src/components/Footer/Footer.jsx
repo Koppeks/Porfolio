@@ -1,20 +1,26 @@
-import React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
 
-    const [t, i18n] = useTranslation()
-    
-    return(
-        <div className="footer_container">
-            <h4>
-                <Trans i18nKey={"footer"}>
-                    Diseñado y construido por
-                </Trans>
-                 <a href="https://github.com/Koppeks" target="_blank" rel="noopener noreferrer"> Nicolás H. Silva</a></h4>
-        </div>
-    )
+  return (
+    <footer className="footer">
+      <div className="footer__inner section-container">
+        <p className="footer__text">
+          {t('footer')}
+          {' '}
+          <a
+            href="https://github.com/Koppeks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer__link"
+          >
+            Nicolás H. Silva
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
-

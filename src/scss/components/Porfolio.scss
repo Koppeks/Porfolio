@@ -1,162 +1,25 @@
-.porfolio_container{
-    border-right: 3px solid var(--dark-second);
-    margin-right: calc(14vw + 6px);
-    padding-bottom: 150px;
-    position: relative;
+.portfolio {
+  padding: 100px 0;
 
-
-    h2{
-        text-align: center;
-        padding: 80px;
-        font-weight: 500;
-    }
-
-    .porfolio_projects{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        .projects_name{
-            width: 30%;
-            height: 40vh;
-            padding-left: 10px;
-            border-block-end: 4px solid;
-            border-inline-start: 4px solid;
-            border-image-source: radial-gradient(circle at bottom left,  var(--dark-second), transparent 50%);
-            border-image-slice: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            h3{
-                cursor: pointer;
-                position: relative;
-            }
-            h3::before{
-                content: "";
-                position: absolute;
-                background-color: var(--green-detail);
-                bottom: 0;
-                left: 0;
-                width: 0;
-                height: 2px;
-                transition: 0.3s all;
-            }
-            h3:hover::before{
-                width: 100%;
-            }
-        }
-        .projects_text{
-            width: 60%;
-            height: 40vh;
-            position: relative;
-            border-block-start: 4px solid;
-            border-inline-end: 4px solid;
-            border-image-source: radial-gradient(circle at top right, var(--dark-second), transparent 35%);
-            border-image-slice: 1;
-
-            .project{
-                position: absolute; 
-                top: 50%;
-                transform: translate(0, -50%);
-                left: 0; 
-                right: 0; 
-                margin-left: auto; 
-                margin-right: auto; 
-                width: 40vw;
-                height: 100%;
-                opacity: 0;
-                transition: 0.5s all;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: -1;
-                
-                .project_links{
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    padding: 10px;
-
-                    a{
-                        padding: 10px;
-                        color: var(--green-detail);
-                    }
-                }
-            }
-            .active{
-                opacity: 1;
-                z-index: 2;
-            }
-        }
-
-    }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 80px 0;
 
-@media screen and (max-width: 1024px) {
-    .porfolio_container{
-        margin-right: calc(17vw + 6px);
+    &__grid {
+      grid-template-columns: 1fr;
     }
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .porfolio_container{
-        margin-right: calc(20vw + 6px);
-        padding-bottom: 100px;
-        
-        h2{
-            padding: 50px;
-        }
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .porfolio_container{
-        border: none;
-        margin-right: 0;
-    
-        .porfolio_projects{
-            flex-direction: column;
-    
-            .projects_name{
-                width: 90%;
-                height: 25vh;
-                border-block-start: 4px solid;
-                border-inline-start: 4px solid;
-                border-image-source: radial-gradient(circle at top left,  var(--dark-second), transparent 30%);
-                flex-direction: column;
-
-            }
-            .projects_text{
-                width: 90%;
-                height: 30vh;
-                border-block-end: 4px solid;
-                border-inline-end: 4px solid;
-                border-image-source: radial-gradient(circle at bottom right, var(--dark-second), transparent 35%);
-    
-                .project{
-                    width: 90%;
-                    
-                    .project_links{
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        padding: 10px;
-                        
-                        a{
-                            text-decoration: none;
-                            padding: 5px;
-                            color: var(--green-detail);
-                        }
-                    }
-                }
-                .active{
-                    opacity: 1;
-                    z-index: 2;
-                }
-            }
-    
-        }
-    }
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 60px 0;
+  }
 }

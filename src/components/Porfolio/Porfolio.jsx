@@ -1,119 +1,44 @@
-import { Trans, useTranslation } from "react-i18next";
-import squares from "../../images/ninesquares.svg";
-import wiggle from "../../images/wiggle.svg";
+import { useTranslation } from "react-i18next";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import useScrollReveal from "../../hooks/useScrollReveal";
+
+const PROJECTS = [
+  {
+    id: 1,
+    name: 'portfolio.wakatimegas.title',
+    descKey: 'portfolio.wakatimegas.description',
+    stack: ['javascript', 'react', 'tanstack', 'tailwind', 'extension', 'browser', 'css', 'html'],
+    live: 'https://wakatime-for-apps-script.vercel.app/',
+    github: 'https://github.com/Koppeks/wakatime-gas',
+    extra: 'https://chromewebstore.google.com/detail/wakatime-for-google-apps/gmpiofbkheibmaofamolbnahecgafkje'
+  },
+  {
+    id: 2,
+    name: 'portfolio.accounting_system.title',
+    descKey: 'portfolio.accounting_system.description',
+    stack: ['typescript', 'nextjs', 'tailwind', 'node.js', 'prisma', 'postgresql', 'supabase'],
+    live: 'https://sistema-contable-simil-hb.vercel.app/',
+  },
+];
 
 function Porfolio() {
-  const [t, i18n] = useTranslation();
-
-  function handleShow(e) {
-    const projects = document.querySelectorAll(".project");
-    projects.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("id") === e.target.id) {
-        link.classList.add("active");
-      }
-    });
-  }
+  const { t } = useTranslation();
+  const ref = useScrollReveal();
 
   return (
-    <div className="porfolio_container section" id="sectionPorfolio">
-      <h2>Porfolio</h2>
-      <div className="porfolio_projects">
-        <div className="projects_name">
-          <h3 onClick={handleShow} id="1">
-            MateWeb
-          </h3>
-          <h3 onClick={handleShow} id="2">
-            SinnelReparaciones
-          </h3>
-          <h3 onClick={handleShow} id="3">
-            E-commerce SoyHenry
-          </h3>
-          <h3 onClick={handleShow} id="4">
-            Alan Urri porfolio
-          </h3>
+    <section className="portfolio section reveal" id="sectionPorfolio" ref={ref}>
+      <div className="section-container">
+        <div className="section-header">
+          <h2>Portfolio</h2>
+          <p>{t('porfolio.subtitle')}</p>
         </div>
-        <div className="projects_text">
-          <div id="1" className="project">
-            <p>
-              <Trans i18nKey="porfolio.mateweb">
-                Un proyecto personal, que era para ofrecer mis servicios en
-                internet, en ese momento solo sabia JavaScript, HTML y CSS.
-              </Trans>
-            </p>
-            <div className="project_links">
-              <a
-                href="https://github.com/Koppeks/Mateweb"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <div id="2" className="project">
-            <p>
-              <Trans i18nKey="porfolio.sinnel">
-                Era un local de reparaciones de computadoras, necesitaba una
-                pagina para tener mas visibilidad y aumentar el flujo de
-                clientes.
-              </Trans>
-            </p>
-            <div className="project_links">
-              <a
-                href="https://github.com/Koppeks/sinnelreparaciones"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <div id="3" className="project">
-            <p>
-              <Trans i18nKey="porfolio.soyhenry">
-                El proyecto final de el bootcamp de SoyHenry, un e-commerce de
-                venta de componentes de pc, con API de MercadoPago, MetaMask y
-                Auth0.
-              </Trans>
-            </p>
-            <div className="project_links">
-              <a
-                href="https://ecommerce-frontend-30b.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Trans i18nKey="porfolio.link">Ver el sitio</Trans>
-              </a>
-              <a
-                href="https://github.com/Koppeks/Ecommerce-Frontend-30b"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <div id="4" className="project">
-            <p>
-              <Trans i18nKey="porfolio.alan">
-                Una Landing page para un profesional del marketing y contenido
-                digital.
-              </Trans>
-            </p>
-            <div className="project_links">
-              <a
-                href="https://alan-porfolio.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Trans i18nKey="porfolio.link">Ver el sitio</Trans>
-              </a>
-            </div>
-          </div>
+        <div className="portfolio__grid">
+          {PROJECTS.map(project => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

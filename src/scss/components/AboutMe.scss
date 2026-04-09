@@ -1,100 +1,157 @@
-.aboutme_container{
-    background-color: var(--dark-second);
-    margin-right: calc(14vw + 6px);
-    color: var(--white-main);
-    padding: 40px 0 40px 0;
-    
+.about {
+  padding: 100px 0;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 
-    h2{
-        text-align: center;
-        padding: 10px;
+  &__inner {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  &__image-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image-wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__photo {
+    width: 180px;
+    height: auto;
+    border-radius: var(--radius-md);
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--border);
+    filter: grayscale(0.1);
+  }
+
+  &__image-glow {
+    position: absolute;
+    inset: -30px;
+    background: radial-gradient(circle, var(--accent-dim), transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  &__text-col {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__title {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    max-width: 520px;
+  }
+
+  &__skills-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-faint);
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  &__skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__skill {
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid var(--border-accent);
+    transition: background var(--transition), transform var(--transition);
+
+    &:hover {
+      background: rgba(66, 206, 181, 0.18);
+      transform: translateY(-1px);
     }
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 85%;
-        margin: auto;
-        padding: 20px;
+  }
 
-        .aboutme_image{
-            position: relative;
-            width: 250px;
-            height: 150px;
+  &__languages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 
-            .aboutme_arrow{
-                position: absolute;
-                top: -70px;
-                left: 0px;
-                z-index: 1;
-            }
-            img{
-                position: absolute;
-                width: 150px;
-                bottom: 0;
-                right: 0;
-            }
-        }
-        p{
-            width: 70%;
-        }
+  &__langs {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child {
+      border-bottom: none;
     }
+  }
+
+  &__lang-name {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 400;
+  }
+
+  &__lang-level {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 500;
+    padding: 2px 8px;
+    background: var(--accent-dim);
+    border-radius: 100px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-    .aboutme_container{
-        margin-right: calc(17vw + 6px);
+@media (max-width: 900px) {
+  .about {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
+
+    &__image-col {
+      justify-content: flex-start;
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .aboutme_container{
-        margin-right: calc(20vw + 6px);
-        padding: 20px 0 20px 0;
+@media (max-width: 540px) {
+  .about {
+    padding: 60px 0;
 
-        div{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: none;
-            padding: 20px;
-
-            .aboutme_image{
-                position: relative;
-                width: 150px;
-                height: 150px;
-    
-                .aboutme_arrow{
-                    left: -40px;
-                    width: 110px;
-                }
-            }
-            p{
-                width: 60%;
-            }
-        }
+    &__image-col {
+      justify-content: center;
     }
-}
-@media screen and (max-width: 540px) {
-    .aboutme_container{
-        margin-right: 0;
 
-        div{
-            justify-content: space-between;
-            width: 95%;
-            flex-direction: column-reverse;
-    
-            .aboutme_image{
-                width: 150px;
-    
-                .aboutme_arrow{
-                    left: -40px;
-                }
-            }
-            p{
-                width: 90%;
-                margin-bottom: 50px;
-            }
-        }
+    &__desc {
+      max-width: 100%;
     }
+  }
 }

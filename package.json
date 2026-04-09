@@ -1,9 +1,10 @@
 {
   "name": "porfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
+    "@icons-pack/react-simple-icons": "^13.13.0",
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -14,9 +15,9 @@
     "i18next": "^22.4.9",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.1",
+    "lucide-react": "^1.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18n": "^1.0.1",
     "react-i18next": "^12.1.4",
     "react-icon": "^1.0.0",
     "react-scripts": "5.0.1",

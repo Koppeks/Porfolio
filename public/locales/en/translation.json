@@ -1,60 +1,93 @@
 {
-  "maindescription": "FullStack web developer",
-  "fronttext": "I discovered programming and design 5 years ago, everything started as a hobby, making mods for video games. I enjoyed modeling, making pixelart and 2D textures, I spent my time learning new languages, searching for code and helping other programmers. I ended up discovering web programming, which mixes what I like most, the logic of programming and the style in design.",
+  "maindescription": "Frontend & Fullstack Developer",
+  "fronttext": "I build fast, accessible, and visually polished web experiences. Passionate about clean code, great UX, and shipping products that matter.",
   "navbar": {
     "one": "Home",
-    "four": "About me",
-    "five": "Extra",
+    "three": "Projects",
+    "four": "About",
+    "five": "Skills",
     "six": "Contact"
   },
-  "stacktitle": "My stack of technologies",
-  "porfolio": {
-    "mateweb": "A personal project, which was to offer my services on the internet, at that time only wise JavaScript, HTML and CSS.",
-    "sinnel": "It was a local computer repair, needed a page to have more visibility and increase the flow of customers.",
-    "soyhenry": "The final project of the SoyHenry bootcamp, an e-commerce selling pc components, with MercadoPago, MetaMask and Auth0 APIs.",
-    "alan": "Landing page for professional marketing and digital content.",
-    "link": "See the web page"
+  "hero": {
+    "available": "Open to work",
+    "cta1": "View Projects",
+    "cta2": "Get in Touch"
+  },
+  "stacktitle": "Tech Stack",
+  "portfolio": {
+    "subtitle": "A selection of things I've built.",
+    "wakatimegas": {
+      "title": "Wakatime for Google Apps Script",
+      "description": "WakaTime for Google Apps Script brings automatic time tracking to the Google Apps Script IDE — something the official WakaTime editor plugins don't support."
+    },
+    "accounting_system": {
+      "title": "Accounting System",
+      "description": "An a internal software for a Retail Lenders Business solution for accounting management, featuring automation and data analysis capabilities."
+    },
+    "link": "Live site"
+  },
+  "contributions": {
+    "title": "GitHub",
+    "subtitle": "Repos and open source work.",
+    "layer5io": {
+      "name": "Layer5io/docs",
+      "desc": "Rework gradient animation on hero section"
+    },
+    "puter": {
+      "name": "HeyPuter/puter",
+      "desc": "Document translations and implementation of a folder and file template system."
+    },
+    "webdevtools": {
+      "name": "Bashamega/WebDevTools",
+      "desc": "Implementation of a CSS to SCSS converter and vice versa."
+    }
   },
   "aboutme": {
     "title": "About me",
-    "description": "I live in Argentina, I am 25 years old, I am a calm and patient person, I like football, video games, exercise that in addition to improving health I use therapeutically, beaches, 2D/3D design, taekwondo and what before considered a hobbie, today is my source of income, programming."
+    "description": "I’m a full-stack web developer with 3+ years building dynamic, scalable applications with JavaScript and TypeScript. I combine development with a strong UX/UI mindset, creating interfaces that feel modern, intuitive, and smooth. I work comfortably across the stack using tools like TanStack, Tailwind, Bootstrap, and Express, whether in monorepos or REST-based architectures. I care about clean, maintainable code and fast, reliable delivery.",
+    "skills_label": "Core Skills"
   },
   "extra": {
-    "extratitle1": "Extra Habilities",
-    "extratitle2": "My objective technologies",
-    "description2": "I want to continue expanding my knowledge into other technologies in the future, I have scraped the surface of some such as PHP, C# and C++. In the future I am intrigued to see that I can learn from those languages."
+    "extratitle1": "Tools",
+    "extratitle2": "Exploring",
+    "languages": "Languages"
   },
   "contact": {
-    "title": "Contact with me",
+    "title": "Get in touch",
     "form": {
       "name1": "Full name",
-      "placeholder1": "Write your full name in here",
-      "placeholder2": "Write your email in here",
-      "name3": "Reason of your message",
-      "placeholder3": "Write your reason of your message in here",
+      "placeholder1": "Your full name",
+      "placeholder2": "your@email.com",
+      "name3": "Subject",
+      "placeholder3": "What's this about?",
       "name4": "Message",
-      "placeholder4": "Write your message in here",
-      "button": "Send"
+      "placeholder4": "Your message...",
+      "button": "Send message",
+      "toast": {
+        "success": "Message sent! I'll get back to you soon.",
+        "error": "Something went wrong. Please try again.",
+        "warning": "Please fill in all required fields correctly."
+      }
     }
   },
-  "footer": "designed and built by",
+  "footer": "Designed & built by",
   "errors": {
     "name": {
-      "letters": "The name must contain letters",
-      "short": "The name is too short",
-      "long": "The name is too long",
-      "specialchar": "The name cannot contain numbers or special characters"
+      "letters": "Name must contain letters",
+      "short": "Name is too short",
+      "long": "Name is too long",
+      "specialchar": "Name cannot contain numbers or special characters"
     },
     "email": {
-      "valid": "You must give a valid email"
+      "valid": "Please enter a valid email"
     },
     "reason": {
-      "short": "The reason is to short"
+      "short": "Subject is too short"
     },
     "message": {
-      "letters": "The message must contain letters",
-      "short": "The message is to short",
-      "long": "The message is to long"
+      "letters": "Message must contain letters",
+      "short": "Message is too short",
+      "long": "Message is too long"
     },
     "required": "Required"
   }

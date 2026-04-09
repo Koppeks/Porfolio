@@ -1,86 +1,45 @@
+import { useTranslation } from "react-i18next";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
-import squares from "../../images/ninesquares.svg"
-import wiggle from "../../images/wiggle.svg"
-import wiggle2 from "../../images/wiggle2.svg"
-import space from "../../images/space.svg"
-import space1 from "../../images/space1.svg"
-import succeed from "../../images/succeed.svg"
-import objective from "../../images/objective.svg"
-import contact from "../../images/contact.svg"
-import chatting from "../../images/chatting.svg"
-import { Trans, useTranslation } from "react-i18next"
+const TECH = ['JavaScript', 'TypeScript', 'Python', ];
 
-function FrontPage(){
+function FrontPage() {
+  const { t } = useTranslation();
+  const ref = useScrollReveal();
 
-    const [t, i18n] = useTranslation()
+  return (
+    <section className="hero section" id="sectionHome">
+      <div className="hero__orb hero__orb--1" aria-hidden="true" />
+      <div className="hero__orb hero__orb--2" aria-hidden="true" />
 
-    return(
-        <>
-            <div className='frontpage_container'>
-                <div className='frontpage_textcontainer section' id="sectionHome">
-                    <div className='frontpage_maintext'>
-                        <h1>Nicolás Hernán Silva</h1>
-                        <h2>
-                            <Trans i18nKey="maindescription">   
-                                Desarrollador web fullstack
-                            </Trans>
-                        </h2>
-                        <p>
-                            <Trans i18nKey="fronttext">   
-                                Descubrí la programación y diseño hace 5 años, todo comenzo como un hobbie, haciendo mods para videojuegos. Disfrute mucho modeando, haciendo pixelart y texturas 2D, dediqué mi tiempo a aprender nuevos lenguajes, buscar código y ayudar a otros programadores. Termine descubriendo la programacion web, que mezcla lo que más me gusta, la lógica de programar y el estilo en diseño.
-                            </Trans>
-                        </p>
-                    </div>
-                <div className='frontpage_cornerdetail'></div>
-                </div>
-                <div className='frontpage_stack'>
-                    <ul>
-                        <li><p>JavaScript</p></li>
-                        <li><p>React</p></li>
-                        <li><p>React-Native</p></li>
-                        <li><p>Sequelize</p></li>
-                        <li><p>Express</p></li>
-                        <li><p>GitHub</p></li>
-                        <li><p>Node.js</p></li>
-                        <li><p>Material-UI</p></li>
-                        <li><p>Sass</p></li>
-                        <li><p>Redux-Toolkit</p></li>
-                        <li><p>Tailwind</p></li>
-                        <li><p>CSS3</p></li>
-                        <li><p>HTML5</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <span className="detail"></span>
-                <span className="detail"></span>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-                {/* 10 */}
-                <span className="detail"></span>
-                <img className="detail" src={space} alt="detail space background"/>
-                <img className="detail" src={space1} alt="detail space background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={succeed} alt="detail succeed background"/>
-                <span className="detail"></span>
-                <img className="detail" src={objective} alt="detail objective background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-                <img className="detail" src={wiggle2} alt="detail wiggle background"/>
-                {/* 20 */}
-                <img className="detail" src={contact} alt="detail contact background"/>
-                <img className="detail" src={chatting} alt="detail chatting background"/>
-                <img className="detail" src={squares} alt="detail square background"/>
-                <img className="detail" src={wiggle} alt="detail wiggle background"/>
-            </div>
-        </>
-    )
+      <div className="hero__content section-container">
+        <div className="reveal" ref={ref}>
+          <h1 className="hero__name">
+            Nicolás H.<br />
+            <span className="hero__name--accent">Silva.</span>
+          </h1>
+
+          <p className="hero__role">{t('maindescription')}</p>
+          <p className="hero__desc">{t('fronttext')}</p>
+
+          <div className="hero__ctas">
+            <a href="#sectionPorfolio" className="btn btn--primary">
+              {t('hero.cta1')}
+            </a>
+            <a href="#sectionContact" className="btn btn--ghost">
+              {t('hero.cta2')}
+            </a>
+          </div>
+
+          <div className="hero__tech">
+            {TECH.map(tech => (
+              <span key={tech} className="hero__tech-badge">{tech}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default FrontPage;
