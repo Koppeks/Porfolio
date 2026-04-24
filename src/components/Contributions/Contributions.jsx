@@ -24,8 +24,16 @@ const CONTRIBUTIONS = [
     repo: 'Koppeks/WebDevTools',
     nameKey: 'contributions.webdevtools.name',
     descKey: 'contributions.webdevtools.desc',
-    lang: 'JavaScript',
+    lang: 'Typescript',
     url: 'https://github.com/Bashamega/WebDevTools',
+  },
+  {
+    id: 4,
+    repo: 'observatorio-justicia-argentina/observatorio-justicia-argentina-backend',
+    nameKey: 'contributions.observatorio.name',
+    descKey: 'contributions.observatorio.desc',
+    lang: 'JavaScript',
+    url: 'https://github.com/observatorio-justicia-argentina/observatorio-justicia-argentina-backend',
   },
 ];
 

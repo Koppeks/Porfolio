@@ -16,13 +16,38 @@
   "stacktitle": "Stack de tecnologías",
   "portfolio": {
     "subtitle": "Una selección de proyectos que construí.",
-    "wakatimegas": {
-      "title": "Wakatime para Google Apps Script",
-      "description": "WakaTime para Google Apps Script lleva el seguimiento automático del tiempo al IDE de Google Apps Script, algo que los plugins oficiales de WakaTime para editores no soportan."
+    "gwaka": {
+      "title": "Gwaka",
+      "description": "Trae el seguimiento automático del tiempo a todo el espacio de trabajo de Google, cubriendo herramientas como Google Apps Script, Docs, Sheets y más - llenando el vacío dejado por los plugins oficiales de WakaTime.",
+      "details" : {
+        "0": "Resolución de URL rápida y corta, optimizada para una latencia mínima y un manejo limpio de rutas.",
+        "1": "Capa de datos estructurados diseñada para almacenar, recuperar y organizar enlaces de manera consistente a escala.",
+        "2": "Interfaz de creación de enlaces sin fricciones: pasa de la idea a la URL compartible en segundos.",
+        "3": "Soporte de alias personalizado, que te permite crear enlaces cortos memorables y con marca.",
+        "4": "Seguimiento de clics y análisis para supervisar cómo, cuándo y dónde se utilizan tus enlaces.",
+        "5": "Controles de caducidad y acceso para mantener tus enlaces seguros y limitados en el tiempo."
+      }
     },
-    "accounting_system": {
-      "title": "Sistema Contable",
-      "description": "Un software interno para una solución de negocio de prestamistas minoristas, enfocado en la gestión contable, con capacidades de automatización y análisis de datos."
+    "alrato": {
+      "title": "Alrato",
+      "description": "Un software interno para una solución de negocio de prestamistas minoristas, enfocado en la gestión contable, con capacidades de automatización y análisis de datos.",
+      "details": {
+        "0": "Resolución de URL rápida y corta con tiempos de respuesta optimizados y manejo inteligente de rutas.",
+        "1": "Arquitectura de datos escalable para almacenar, recuperar y organizar enlaces de manera consistente.",
+        "2": "Interfaz mínima diseñada para crear enlaces cortos en segundos sin fricción.",
+        "3": "Soporte de alias personalizado para que tus enlaces sean memorables y estén a la altura de tu marca.",
+        "4": "Haz clic en análisis y seguimiento del uso para entender cómo funcionan tus enlaces.",
+        "5": "Redireccionamiento seguro con validación para proteger a los usuarios de destinos maliciosos."
+      }
+    },
+    "urlito": {
+      "title": "Urlito",
+      "description": "Desarrollé un acortador de URLs centrado en una experiencia simple y rápida, permitiendo crear y gestionar enlaces en segundos. El proyecto incluye manejo de redirecciones, estructura de datos para links y una interfaz optimizada para reducir fricción en el uso.",
+      "details" : {
+        "0": "Implementación de resolución rápida de URLs cortas, optimizando tiempos de respuesta y manejo de rutas.",
+        "1": "Diseño de la estructura para almacenar, recuperar y organizar enlaces de forma consistente y escalable.",
+        "2": "Interfaz pensada para crear links en segundos, reduciendo fricción y pasos innecesarios."
+      }
     },
     "link": "Ver el sitio"
   },
@@ -40,6 +65,10 @@
     "webdevtools": {
       "name": "Bashamega/WebDevTools",
       "desc": "Implementación de un convertor de css a scss y viceversa."
+    },
+    "observatorio": {
+      "name": "observatorio-justicia-argentina/observatorio-justicia-argentina-backend",
+      "desc": "Arreglo de los errores reportados por ESLint, revisando y ajustando el código línea por línea para cumplir con las reglas definidas."
     }
   },
   "aboutme": {
@@ -69,6 +98,10 @@
         "warning": "Por favor completá todos los campos correctamente."
       }
     }
+  },
+  "project_detail": {
+    "back": "Volver a proyectos",
+    "not_found": "Proyecto no encontrado."
   },
   "footer": "Diseñado y construido por",
   "errors": {

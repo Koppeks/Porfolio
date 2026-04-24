@@ -74,7 +74,7 @@ function NavBar() {
             onClick={toggleLang}
             aria-label="Toggle language"
           >
-            {i18n.language.startsWith('es') ? 'EN' : 'ES'}
+            {i18n.language.startsWith('es') ? 'ES' : 'EN'}
           </button>
           <button
             className="navbar__theme"

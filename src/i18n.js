@@ -4,7 +4,7 @@ import backend from "i18next-http-backend"
 import { initReactI18next } from "react-i18next"
 
 i18n.use(backend).use(languageDetector).use(initReactI18next).init({
-  fallbackLng: 'es',
+  fallbackLng: 'en',
   debug: false,
   detection: {
     order: ['navigator', 'querystring', 'cookie'],

@@ -16,13 +16,38 @@
   "stacktitle": "Tech Stack",
   "portfolio": {
     "subtitle": "A selection of things I've built.",
-    "wakatimegas": {
-      "title": "Wakatime for Google Apps Script",
-      "description": "WakaTime for Google Apps Script brings automatic time tracking to the Google Apps Script IDE — something the official WakaTime editor plugins don't support."
+    "gwaka": {
+      "title": "Gwaka",
+      "description": "Brings automatic time tracking to the entire Google Workspace — covering tools like Google Apps Script, Docs, Sheets, and more — filling the gap left by official WakaTime plugins.",
+      "details": {
+        "0": "Lightning-fast short URL resolution, optimized for minimal latency and clean route handling.",
+        "1": "Structured data layer designed to store, retrieve, and organize links consistently at scale.",
+        "2": "Frictionless link creation interface — go from idea to shareable URL in seconds.",
+        "3": "Custom alias support, letting you craft memorable and branded short links.",
+        "4": "Click tracking and analytics to monitor how, when, and where your links are used.",
+        "5": "Expiration and access controls to keep your links secure and time-bound."
+      }
     },
-    "accounting_system": {
-      "title": "Accounting System",
-      "description": "An a internal software for a Retail Lenders Business solution for accounting management, featuring automation and data analysis capabilities."
+    "alrato": {
+      "title": "Alrato",
+      "description": "An a internal software for a Retail Lenders Business solution for accounting management, featuring automation and data analysis capabilities.",
+      "details": {
+        "0": "Lightning-fast short URL resolution with optimized response times and smart route handling.",
+        "1": "Scalable data architecture for storing, retrieving, and organizing links consistently.",
+        "2": "Minimal interface designed to create short links in seconds with zero friction.",
+        "3": "Custom alias support so your links are memorable and on-brand.",
+        "4": "Click analytics and usage tracking to understand how your links perform.",
+        "5": "Secure redirects with validation to protect users from malicious destinations."
+      }
+    },
+    "urlito": {
+      "title": "Urlito",
+      "description": "I developed a URL shortener focused on a simple and fast experience, allowing you to create and manage links in seconds. The project includes redirection handling, data structure for links and an optimized interface to reduce friction in use.",
+      "details" : {
+        "0": "Implementation of quick resolution of short long URLs, optimizing response times and route handling.",
+        "1": "Design the structure to store, retrieve and organize links consistently and scalable.",
+        "2": "Interface designed to create links in seconds, reducing friction and unnecessary steps."
+      }
     },
     "link": "Live site"
   },
@@ -40,6 +65,10 @@
     "webdevtools": {
       "name": "Bashamega/WebDevTools",
       "desc": "Implementation of a CSS to SCSS converter and vice versa."
+    },
+    "observatorio": {
+      "name": "observatorio-justicia-argentina/observatorio-justicia-argentina-backend",
+      "desc": "Fixing the errors reported by ESLint, reviewing and adjusting the code line by line to comply with the defined rules."
     }
   },
   "aboutme": {
@@ -69,6 +98,10 @@
         "warning": "Please fill in all required fields correctly."
       }
     }
+  },
+  "project_detail": {
+    "back": "Back to projects",
+    "not_found": "Project not found."
   },
   "footer": "Designed & built by",
   "errors": {
