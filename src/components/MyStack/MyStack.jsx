@@ -41,12 +41,19 @@ import hostinger from "../../images/StackLogos/logo-hostinger.svg"
 import godaddy from "../../images/StackLogos/logo-godaddy.svg"
 import render from "../../images/StackLogos/logo-render.svg"
 import supabase from "../../images/StackLogos/logo-supabase.svg"
+import cloudinary from "../../images/StackLogos/logo-cloudinary.svg"
+// APIs & Services
+import meta from "../../images/StackLogos/logo-meta.svg"
+import stripe from "../../images/StackLogos/logo-stripe.svg"
+import resend from "../../images/StackLogos/logo-resend.svg"
 // Database & ORMs
 import postgresql from "../../images/StackLogos/logo-postgresql.svg"
 import mysql from "../../images/StackLogos/logo-mysql.svg"
 import redis from "../../images/StackLogos/logo-redis.svg"
 import prisma from "../../images/StackLogos/logo-prisma.svg"
 import sequelize from "../../images/StackLogos/logo-sequelize.svg"
+import turso from "../../images/StackLogos/logo-turso.svg"
+import upstash from "../../images/StackLogos/logo-upstash.svg"
 import { useTranslation } from "react-i18next"
 import useScrollReveal from "../../hooks/useScrollReveal"
 
@@ -122,6 +129,16 @@ const CATEGORIES = [
       { name: "GoDaddy", icon: godaddy },
       { name: "Render", icon: render },
       { name: "Supabase", icon: supabase },
+      { name: "Cloudinary", icon: cloudinary },
+    ],
+  },
+  {
+    id: "apis-&-services",
+    label: "APIs & Services",
+    skills: [
+      { name: "Meta", icon: meta },
+      { name: "Stripe", icon: stripe },
+      { name: "Resend", icon: resend },
     ],
   },
   {
@@ -131,6 +148,8 @@ const CATEGORIES = [
       { name: "PostgreSQL", icon: postgresql },
       { name: "MySQL", icon: mysql },
       { name: "Redis", icon: redis },
+      { name: "Upstash", icon: upstash },
+      { name: "Turso", icon: turso },
       { name: "Prisma", icon: prisma },
       { name: "Sequelize", icon: sequelize },
     ],
