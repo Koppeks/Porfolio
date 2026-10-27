@@ -1,3 +1,6 @@
+import catalogo1 from './images/Suvanza/Catalogo/Suvanza-Catalogo-1.png';
+import catalogo2 from './images/Suvanza/Catalogo/Suvanza-Catalogo-2.png';
+import catalogo3 from './images/Suvanza/Catalogo/Suvanza-Catalogo-3.png';
 import urlito1 from './images/Urlito/Urlito-1.PNG';
 import urlito2 from './images/Urlito/Urlito-2.PNG';
 import urlito3 from './images/Urlito/Urlito-3.PNG';
@@ -44,5 +47,16 @@ export const PROJECTS = [
     github: '',
     extra: '',
     images: [urlito1, urlito2, urlito3, urlito4, urlito5],
+  },
+  {
+    id: 4,
+    name: 'portfolio.suvanza-catalogo.title',
+    descKey: 'portfolio.suvanza-catalogo.description',
+    details: ['portfolio.suvanza-catalogo.details.0', 'portfolio.suvanza-catalogo.details.1', 'portfolio.suvanza-catalogo.details.2', 'portfolio.suvanza-catalogo.details.3', 'portfolio.suvanza-catalogo.details.4', 'portfolio.suvanza-catalogo.details.5'],
+    stack: ['turso', 'react', 'nextjs', 'tailwind', 'typescript', 'eslint', 'react-dom', 'cloudinary', 'odoo'],
+    live: 'https://suvanza-catalogo.vercel.app/',
+    github: '',
+    extra: '',
+    images: [catalogo1, catalogo2, catalogo3],
   },
 ];

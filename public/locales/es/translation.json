@@ -49,6 +49,18 @@
         "2": "Interfaz pensada para crear links en segundos, reduciendo fricción y pasos innecesarios."
       }
     },
+    "suvanza-catalogo": {
+      "title": "Catálogo Suvanza",
+      "description": "Catálogo digital y punto de venta para Suvanza, que conecta al equipo de ventas, los eventos y la facturación en un solo flujo: desde que se arma el carrito hasta que el presupuesto queda cargado en Odoo, sin cargar nada a mano.",
+      "details": {
+        "0": "Catálogo con variantes, precios escalonados por cantidad, varias categorías por producto y galerías de imágenes optimizadas con Cloudinary.",
+        "1": "Motor de promociones y combos que calcula descuentos en el carrito y muestra el desglose de cada precio con claridad.",
+        "2": "Gestión de eventos con productos, promociones y equipo de ventas asignados a cada uno, y métricas de ventas por evento o canal individual.",
+        "3": "Panel de pedidos con seguimiento de pagos, medios de pago, notas, impresión de comprobantes y actualización casi en tiempo real.",
+        "4": "Integración con Odoo que genera presupuestos de forma automática, compara clientes por DNI y teléfono, y valida la política de IVA antes de cada envío.",
+        "5": "Exportaciones seguras ante fallos, con reintentos, resolución manual y reparación de precios usando el historial guardado de cada compra."
+      }
+    },
     "link": "Ver el sitio"
   },
   "contributions": {

@@ -46,6 +46,7 @@ import cloudinary from "../../images/StackLogos/logo-cloudinary.svg"
 import meta from "../../images/StackLogos/logo-meta.svg"
 import stripe from "../../images/StackLogos/logo-stripe.svg"
 import resend from "../../images/StackLogos/logo-resend.svg"
+import odoo from "../../images/StackLogos/logo-odoo.svg"
 // Database & ORMs
 import postgresql from "../../images/StackLogos/logo-postgresql.svg"
 import mysql from "../../images/StackLogos/logo-mysql.svg"
@@ -139,6 +140,7 @@ const CATEGORIES = [
       { name: "Meta", icon: meta },
       { name: "Stripe", icon: stripe },
       { name: "Resend", icon: resend },
+      { name: "Odoo", icon: odoo },
     ],
   },
   {

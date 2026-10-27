@@ -49,6 +49,18 @@
         "2": "Interface designed to create links in seconds, reducing friction and unnecessary steps."
       }
     },
+    "suvanza-catalogo": {
+      "title": "Suvanza Catalog",
+      "description": "A digital catalog and point-of-sale platform for Suvanza that brings the sales team, events and invoicing into one flow, from building a cart to a quotation landing in Odoo, with no manual data entry.",
+      "details": {
+        "0": "Product catalog with variants, quantity-based price tiers, multiple categories per product and Cloudinary-optimized image galleries.",
+        "1": "Promotions and combo engine that applies discounts in the cart and shows a clear breakdown of every price.",
+        "2": "Event management with products, promotions and sales staff assigned to each event, plus sales metrics per event or individual channel.",
+        "3": "Order dashboard with payment tracking, payment methods, notes, printable receipts and near real-time updates.",
+        "4": "Odoo integration that creates quotations automatically, matches customers by national ID and phone number, and checks the sales-tax policy before every submission.",
+        "5": "Fail-safe exports with retries, manual resolution and price repair based on each purchase's saved history."
+      }
+    },
     "link": "Live site"
   },
   "contributions": {
