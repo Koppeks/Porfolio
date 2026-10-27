@@ -29,7 +29,7 @@ export const PROJECTS = [
     descKey: 'portfolio.alrato.description',
     details: ['portfolio.alrato.details.0', 'portfolio.alrato.details.1', 'portfolio.alrato.details.2', 'portfolio.alrato.details.3', 'portfolio.alrato.details.4', 'portfolio.alrato.details.5'],
     stack: ['typescript', 'nextjs', 'tailwind', 'node.js', 'prisma', 'postgresql', 'supabase'],
-    live: 'https://sistema-contable-simil-hb.vercel.app/',
+    live: 'https://www.alrato.com/',
     github: '',
     extra: '',
     images: [alrato1, alrato2, alrato3, alrato4],
