@@ -61,6 +61,18 @@
         "5": "Fail-safe exports with retries, manual resolution and price repair based on each purchase's saved history."
       }
     },
+    "suvanza-institucional": {
+      "title": "Suvanza Institutional",
+      "description": "Bilingual corporate website for Suvanza, a pharmaceutical and health & beauty company. It has an animated browsing experience and a custom admin panel, so the team can manage products, the gallery and documents without needing a developer.",
+      "details": {
+        "0": "Scroll-driven landing with chained scenes, an interactive 3D globe showing the company's presence in each country, and a hexagon-based visual language.",
+        "1": "Fully localized in Spanish and English with next-intl, with pages for each business unit: Pharma, Health & Beauty, Training Center and Pharmacovigilance.",
+        "2": "Admin panel with JWT login for managing products, categories and the gallery on a Turso database.",
+        "3": "Image and PDF management with signed Cloudinary uploads. PDFs over the size limit are compressed right in the browser with Ghostscript compiled to WebAssembly.",
+        "4": "Contact and pharmacovigilance forms that send email through Resend, with per-IP rate limiting on Upstash Redis.",
+        "5": "Instagram feed on the Training Center page through Meta's Graph API, with caching and pagination."
+      }
+    },
     "link": "Live site"
   },
   "contributions": {

@@ -1,18 +1,26 @@
-import catalogo1 from './images/Suvanza/Catalogo/Suvanza-Catalogo-1.png';
-import catalogo2 from './images/Suvanza/Catalogo/Suvanza-Catalogo-2.png';
-import catalogo3 from './images/Suvanza/Catalogo/Suvanza-Catalogo-3.png';
-import urlito1 from './images/Urlito/Urlito-1.PNG';
-import urlito2 from './images/Urlito/Urlito-2.PNG';
-import urlito3 from './images/Urlito/Urlito-3.PNG';
-import urlito4 from './images/Urlito/Urlito-4.PNG';
-import urlito5 from './images/Urlito/Urlito-5.PNG';
-import gwaka1 from './images/Gwaka/Gwaka1.PNG';
-import gwaka2 from './images/Gwaka/Gwaka2.PNG';
-import gwaka3 from './images/Gwaka/Gwaka3.gif';
+import catalogo1 from './images/Suvanza/Catalogo/Suvanza-Catalogo-1.webp';
+import catalogo2 from './images/Suvanza/Catalogo/Suvanza-Catalogo-2.webp';
+import catalogo3 from './images/Suvanza/Catalogo/Suvanza-Catalogo-3.webp';
+import institucional1 from './images/Suvanza/Institucional/Suvanza-Institucional-1.webp';
+import institucional2 from './images/Suvanza/Institucional/Suvanza-Institucional-2.webp';
+import institucional3 from './images/Suvanza/Institucional/Suvanza-Institucional-3.webp';
+import institucional4 from './images/Suvanza/Institucional/Suvanza-Institucional-4.webp';
+import institucional5 from './images/Suvanza/Institucional/Suvanza-Institucional-5.webp';
+import institucional6 from './images/Suvanza/Institucional/Suvanza-Institucional-6.webp';
+import institucional7 from './images/Suvanza/Institucional/Suvanza-Institucional-7.webp';
+import institucional8 from './images/Suvanza/Institucional/Suvanza-Institucional-8.webp';
+import urlito1 from './images/Urlito/Urlito-1.webp';
+import urlito2 from './images/Urlito/Urlito-2.webp';
+import urlito3 from './images/Urlito/Urlito-3.webp';
+import urlito4 from './images/Urlito/Urlito-4.webp';
+import urlito5 from './images/Urlito/Urlito-5.webp';
+import gwaka1 from './images/Gwaka/Gwaka1.webp';
+import gwaka2 from './images/Gwaka/Gwaka2.webp';
+import gwaka3 from './images/Gwaka/Gwaka3.webp';
 import alrato1 from './images/Alrato/Alrato-1.svg';
-import alrato2 from './images/Alrato/Alrato-2.PNG';
-import alrato3 from './images/Alrato/Alrato-3.PNG';
-import alrato4 from './images/Alrato/Alrato-4.PNG';
+import alrato2 from './images/Alrato/Alrato-2.webp';
+import alrato3 from './images/Alrato/Alrato-3.webp';
+import alrato4 from './images/Alrato/Alrato-4.webp';
 
 export const PROJECTS = [
   {
@@ -58,5 +66,16 @@ export const PROJECTS = [
     github: '',
     extra: '',
     images: [catalogo1, catalogo2, catalogo3],
+  },
+  {
+    id: 5,
+    name: 'portfolio.suvanza-institucional.title',
+    descKey: 'portfolio.suvanza-institucional.description',
+    details: ['portfolio.suvanza-institucional.details.0', 'portfolio.suvanza-institucional.details.1', 'portfolio.suvanza-institucional.details.2', 'portfolio.suvanza-institucional.details.3', 'portfolio.suvanza-institucional.details.4', 'portfolio.suvanza-institucional.details.5'],
+    stack: ['typescript', 'nextjs', 'react', 'tailwind', 'turso', 'cloudinary', 'resend', 'upstash', 'meta', 'three.js', 'next-intl'],
+    live: 'https://suvanza.com.ar/',
+    github: '',
+    extra: '',
+    images: [institucional1, institucional2, institucional3, institucional4, institucional5, institucional6, institucional7, institucional8],
   },
 ];

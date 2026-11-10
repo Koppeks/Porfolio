@@ -1,4 +1,4 @@
-import me from "../../images/caricatura.png";
+import me from "../../images/caricatura.webp";
 import { useTranslation } from "react-i18next";
 import useScrollReveal from "../../hooks/useScrollReveal";
 

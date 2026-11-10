@@ -61,6 +61,18 @@
         "5": "Exportaciones seguras ante fallos, con reintentos, resolución manual y reparación de precios usando el historial guardado de cada compra."
       }
     },
+    "suvanza-institucional": {
+      "title": "Suvanza Institucional",
+      "description": "Sitio institucional bilingüe de Suvanza, una empresa farmacéutica y de salud y belleza. Tiene una experiencia de navegación animada y un panel de administración propio, para que el equipo gestione productos, galería y documentos sin depender de un desarrollador.",
+      "details": {
+        "0": "Landing con escenas encadenadas por scroll, un globo 3D interactivo con la presencia de la empresa en cada país y un lenguaje visual basado en hexágonos.",
+        "1": "Sitio completo en español e inglés con next-intl, con páginas por unidad de negocio: Pharma, Health & Beauty, Training Center y Farmacovigilancia.",
+        "2": "Panel de administración con login por JWT, para gestionar productos, categorías y galería sobre una base de datos Turso.",
+        "3": "Gestión de imágenes y PDFs con subidas firmadas a Cloudinary. Los PDFs que superan el límite se comprimen directamente en el navegador con Ghostscript compilado a WebAssembly.",
+        "4": "Formularios de contacto y de farmacovigilancia con envío de emails por Resend y límite de envíos por IP con Upstash Redis.",
+        "5": "Feed de Instagram integrado en Training Center a través de la Graph API de Meta, con caché y paginación."
+      }
+    },
     "link": "Ver el sitio"
   },
   "contributions": {
