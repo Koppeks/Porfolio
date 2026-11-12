@@ -51,7 +51,7 @@ export const PROJECTS = [
     descKey: 'portfolio.urlito.description',
     details: ['portfolio.urlito.details.0', 'portfolio.urlito.details.1', 'portfolio.urlito.details.2'],
     stack: ['supabase', 'react', 'nextjs', 'tailwind', 'motion', 'maplibre-gl', 'typescript', 'eslint', 'react-dom'],
-    live: 'https://urlito-khaki.vercel.app',
+    live: 'https://urlito.app',
     github: '',
     extra: '',
     images: [urlito1, urlito2, urlito3, urlito4, urlito5],
